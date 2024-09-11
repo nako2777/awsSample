@@ -4,8 +4,16 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path:'/',
+      component: () => import('../views/HomePage.vue')
+    },
+    {
       path:'/s3StaticPage',
       component: () => import('../views/S3StaticPage.vue')
+    },
+    {
+      path:'/cloudfrontAndFargate',
+      component: () => import('../views/CloudfrontAndFargate.vue')
     }
     // {
     //   path: '/about',

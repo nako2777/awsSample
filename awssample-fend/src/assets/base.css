@@ -34,6 +34,8 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
+
+  color: black;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +49,8 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+    
+    color: white;
   }
 }
 
@@ -88,6 +92,6 @@ body {
   display: flex;
 }
 
-a{
+/* a{
   color: white;
-}
+} */
