@@ -3,6 +3,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path:'/s3StaticPage',
+      component: () => import('../views/S3StaticPage.vue')
+    }
     // {
     //   path: '/about',
     //   name: 'about',

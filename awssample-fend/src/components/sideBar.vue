@@ -1,16 +1,26 @@
 <template>
-    <div id="wrapper">
-        <q-list bordered>
+    <div class="q-pa-md wrapperSideBar">
+        <q-list bordered separator>
             <q-item clickable v-ripple>
-                <q-item-section>S3公開用のページ</q-item-section>
+                <q-item-section><RouterLink to="/s3StaticPage">S3公開用のページ</RouterLink></q-item-section>
+            </q-item>
+            <q-item clickable v-ripple>
+                <q-item-section><RouterLink to="">cloudfrontとfargateを繋げる用のページ</RouterLink></q-item-section>
             </q-item>
         </q-list>
+        <!-- <RouterLink to="/">公開用のページ</RouterLink> -->
     </div>
 </template>
 
-<style>
-    #wrapper {
-        height: 100%;
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+</script>
+<style scoped>
+
+    .wrapperSideBar {
         width: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>

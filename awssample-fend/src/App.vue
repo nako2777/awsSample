@@ -1,20 +1,20 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import SideBar from './components/sideBar.vue'
+import SideBar from './components/SideBar.vue'
 </script>
 
 <template>
-  <div id="wrapper">
+  <div class="wrapperRoot">
     <SideBar></SideBar>
-1
-    <RouterView />
+    <div style="flex-grow: 1">
+      <RouterView />
+    </div>
   </div>
 </template>
 
 <style scoped>
-  #wrapper {
-    display: flex;
-    height: 100%;
-  }
+.wrapperRoot {
+  display: flex;
+  flex: 1;
+}
 </style>
-

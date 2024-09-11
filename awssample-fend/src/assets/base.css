@@ -59,7 +59,7 @@
 }
 
 body {
-  min-height: 500px !important;
+  height: 100vh !important;
   color: var(--color-text);
   background: var(--color-background);
   transition:
@@ -85,4 +85,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   padding: 20px;
+  display: flex;
+}
+
+a{
+  color: white;
 }
