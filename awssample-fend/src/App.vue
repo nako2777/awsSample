@@ -6,7 +6,7 @@ import SideBar from './components/SideBar.vue'
 <template>
   <div class="wrapperRoot">
     <SideBar></SideBar>
-    <div style="flex-grow: 1">
+    <div class="routerViewHolder">
       <RouterView />
     </div>
   </div>
@@ -16,5 +16,12 @@ import SideBar from './components/SideBar.vue'
 .wrapperRoot {
   display: flex;
   flex: 1;
+}
+
+.routerViewHolder {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

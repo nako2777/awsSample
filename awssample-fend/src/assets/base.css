@@ -35,7 +35,9 @@
 
   --section-gap: 160px;
 
-  color: black;
+  a {
+    color: black;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,7 +51,10 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
-    
+
+  }
+
+  a {
     color: white;
   }
 }
