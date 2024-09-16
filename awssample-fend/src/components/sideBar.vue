@@ -2,10 +2,10 @@
     <div class="q-pa-md wrapperSideBar">
         <q-list bordered separator>
             <q-item clickable v-ripple>
-                <q-item-section><RouterLink to="/s3StaticPage">S3公開用のページ</RouterLink></q-item-section>
+                <q-item-section><RouterLink to="/S3">S3</RouterLink></q-item-section>
             </q-item>
             <q-item clickable v-ripple>
-                <q-item-section><RouterLink to="/cloudfrontAndFargate">cloudfrontとfargateを繋げる用のページ</RouterLink></q-item-section>
+                <q-item-section><RouterLink to="/RDS">cloudfrontとfargateを繋げる用のページ</RouterLink></q-item-section>
             </q-item>
         </q-list>
         <!-- <RouterLink to="/">公開用のページ</RouterLink> -->

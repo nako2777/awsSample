@@ -7,7 +7,7 @@ import SideBar from './components/SideBar.vue'
   <div class="wrapperRoot">
     <SideBar></SideBar>
     <div class="routerViewHolder">
-      <RouterView />
+      <RouterView class="routerview" />
     </div>
   </div>
 </template>
@@ -23,5 +23,10 @@ import SideBar from './components/SideBar.vue'
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.routerview:hover{
+    box-shadow: 0px 0px 20px bisque;
+    transition: all 0.5s ease-out;
 }
 </style>

@@ -8,12 +8,12 @@ const router = createRouter({
       component: () => import('../views/HomePage.vue')
     },
     {
-      path:'/s3StaticPage',
-      component: () => import('../views/S3StaticPage.vue')
+      path:'/S3',
+      component: () => import('../views/S3Page.vue')
     },
     {
-      path:'/cloudfrontAndFargate',
-      component: () => import('../views/CloudfrontAndFargate.vue')
+      path:'/RDS',
+      component: () => import('../views/RDSPage.vue')
     }
     // {
     //   path: '/about',
