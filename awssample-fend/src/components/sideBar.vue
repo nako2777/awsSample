@@ -5,7 +5,10 @@
                 <q-item-section><RouterLink to="/S3">S3</RouterLink></q-item-section>
             </q-item>
             <q-item clickable v-ripple>
-                <q-item-section><RouterLink to="/RDS">cloudfrontとfargateを繋げる用のページ</RouterLink></q-item-section>
+                <q-item-section><RouterLink to="/RDS">RDS</RouterLink></q-item-section>
+            </q-item>
+            <q-item clickable v-ripple>
+                <q-item-section><RouterLink to="/Cognito">cloudfrontとCognito</RouterLink></q-item-section>
             </q-item>
         </q-list>
         <!-- <RouterLink to="/">公開用のページ</RouterLink> -->

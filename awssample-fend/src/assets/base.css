@@ -39,6 +39,10 @@
     a {
       color: black;
     }
+
+    .q-field__label{
+      color: black;
+    }
   }
 }
 
@@ -60,6 +64,10 @@
   a {
     color: white;
   }
+/*   
+  .q-field__label{
+    color: white !important;
+  } */
 }
 
 *,

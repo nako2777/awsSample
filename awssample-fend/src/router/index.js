@@ -14,6 +14,10 @@ const router = createRouter({
     {
       path:'/RDS',
       component: () => import('../views/RDSPage.vue')
+    },
+    {
+      path:'/Cognito',
+      component: () => import('../views/CognitoPage.vue')
     }
     // {
     //   path: '/about',

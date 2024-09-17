@@ -9,7 +9,7 @@
                         <hr>
                     </q-item-section>
                 </q-item>
-                <q-item @click="getS3File(item.key)" clickable v-ripple v-for="item in s3List">
+                <q-item @click="getS3File(item.key)" :key="item.key" clickable v-ripple v-for="item in s3List">
 
                     <q-item-section>{{ item.key }}</q-item-section>
                     <q-item-section>{{ item.size }}kb</q-item-section>
