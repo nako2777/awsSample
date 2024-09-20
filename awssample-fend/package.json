@@ -10,8 +10,10 @@
     "test:unit": "vitest"
   },
   "dependencies": {
+    "@aws-sdk/client-cognito-identity": "^3.654.0",
     "@aws-sdk/client-cognito-identity-provider": "^3.651.1",
     "@quasar/extras": "^1.16.12",
+    "amazon-cognito-identity-js": "^6.3.12",
     "aws-amplify": "^6.6.2",
     "awssample-fend": "file:",
     "axios": "^1.7.7",

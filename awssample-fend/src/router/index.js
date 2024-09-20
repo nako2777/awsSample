@@ -18,6 +18,10 @@ const router = createRouter({
     {
       path:'/Cognito',
       component: () => import('../views/CognitoPage.vue')
+    },
+    {
+      path:'/CognitoByFargte',
+      component: () => import('../views/FargateToCognito.vue')
     }
     // {
     //   path: '/about',
