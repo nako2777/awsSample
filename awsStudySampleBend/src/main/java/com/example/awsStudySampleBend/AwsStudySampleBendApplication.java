@@ -3,9 +3,8 @@ package com.example.awsStudySampleBend;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
-@SpringBootApplication(exclude = { SecurityAutoConfiguration.class})
+@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class})
 public class AwsStudySampleBendApplication {
 
 	public static void main(String[] args) {

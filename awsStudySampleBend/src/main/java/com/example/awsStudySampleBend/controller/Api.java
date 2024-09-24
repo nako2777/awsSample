@@ -7,13 +7,14 @@ import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.awsStudySampleBend.dto.S3ObjectDto;
 import com.example.awsStudySampleBend.entity.TestTable;
-import com.example.awsStudySampleBend.service.RDSService;
+//import com.example.awsStudySampleBend.service.RDSService;
 import com.example.awsStudySampleBend.service.S3Service;
 
 import lombok.NoArgsConstructor;
@@ -26,8 +27,8 @@ public class Api {
 	
 	@Autowired
 	S3Service s3Service;
-	@Autowired
-	RDSService rdsService;
+//	@Autowired
+//	RDSService rdsService;
 	
 	@GetMapping("/healthCheck")
 	public String healthCheck(){
@@ -47,8 +48,14 @@ public class Api {
 		return s3Service.getS3File(bucketName, keyName);
 	}
 	
-	@GetMapping("/initRDS")
-	public List<TestTable> initRDS() {
-		return rdsService.initRDS();
+//	@GetMapping("/initRDS")
+//	public List<TestTable> initRDS() {
+//		return rdsService.initRDS();
+//	}
+	
+	@PostMapping("/cognito")
+	public String cognito() {
+		System.out.println("in cog");
+		return "cognito access successful!";
 	}
 }

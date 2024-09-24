@@ -204,9 +204,7 @@ const sendConfirm = async () => {
 </script>
 
 <style scoped>
-.boxWrapper {
-  padding: 20px;
-}
+
 
 .pCenter {
   text-align: center;

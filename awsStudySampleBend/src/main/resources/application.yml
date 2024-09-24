@@ -10,3 +10,9 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://cognito-idp.ap-northeast-1.amazonaws.com/ap-northeast-1_tgvJbJHAp
+#                     https://cognito-idp.<AWS_REGION>.amazonaws.com/<USER_POOL_ID>
