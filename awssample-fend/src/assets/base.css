@@ -36,13 +36,16 @@
 
     --section-gap: 160px;
 
-    a {
-      color: black;
-    }
 
-    .q-field__label{
-      color: black;
-    }
+  }
+
+  a .q-field__label {
+    color: black;
+  }
+
+  .q-btn>.q-btn__content>.block {
+    color: black !important;
+
   }
 }
 
@@ -64,7 +67,8 @@
   a {
     color: white;
   }
-/*   
+
+  /*   
   .q-field__label{
     color: white !important;
   } */
@@ -108,7 +112,7 @@ body {
   display: flex;
 }
 
-.keepCenter{
+.keepCenter {
   display: flex;
   justify-content: center;
   align-items: center;

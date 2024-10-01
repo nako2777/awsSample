@@ -23,7 +23,7 @@ app.use(Quasar,{
     plugins:{}
 })
 app.use(globalComponent)
-app.use(createPinia())
+app.use(createPinia())  
 app.use(router)
 
 // app.component('MyInput',{
